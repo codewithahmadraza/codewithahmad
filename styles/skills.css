@@ -1,0 +1,163 @@
+*{
+  font-family: 'Roboto', sans-serif;;
+}
+
+#skills-section {
+  height: 100vh;
+  overflow: hidden;
+  /* background: linear-gradient(to bottom, #e4e6ca93, #ffffff); */
+  background-color: rgba(247, 243, 217, 0.708);
+}
+
+@media (max-width: 480px) {
+  #skills-section{
+    height: 1800px;  
+  }
+  
+}
+
+.skills-container {
+  height: 100vh;
+  padding: 50px 100px 50px 100px;
+}
+
+@media (max-width: 480px) {
+  .skills-container{
+    height: 1800px;  
+    padding: 50px 0 0 0;
+  }
+  
+}
+
+.skills-container h1 {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(40, 215, 31); 
+  margin: 0 0 25px 0;
+  /* text-shadow: 40px 30px 20px rgba(0, 0, 0, 0.141); */
+  font-family: 'Young Serif', serif;
+  background-color: white;
+  border: 2px solid rgb(232, 231, 231);
+  border-radius: 5px 10px 10px 40px;
+}
+
+@media (max-width: 480px) {
+  .skills-container h1 {
+    font-size: 40px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+.skill-grid-container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px 250px;
+  grid-template-rows: 300px;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 50px;
+  margin-top: 220px;
+}
+
+@media (max-width: 480px) {
+  .skill-grid-container{
+    grid-template-columns: 250px;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    row-gap: 20px;
+    margin-top: 50px;
+  }
+}
+
+.skill-grid-container img {
+  height: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.286);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.skill-1 p, .skill-2 p, .skill-3 p,.skill-4 p, .skill-5 p {
+  font-size: 30px;
+  margin: 20px 0 0px 0;
+  color: rgb(215, 31, 101);
+}
+
+.skill-1, .skill-2, .skill-3,.skill-4, .skill-5 {
+  border: 2px solid rgba(0, 0, 0, 0.303);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.214);
+  background-color: white;
+} 
+
+.skill-2, .skill-4 {
+  transform: translateY(100px);
+}
+
+
+/* Animation starts here */
+
+/* .skill-1, .skill-3, .skill-5 {
+  animation-name: skillup;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skillup {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(100px);
+  }
+} */
+
+
+/* .skill-2, .skill-4 {
+  animation-name: skilldown;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skilldown {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-100px);
+  }
+} */
+
+
+.animation-box {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 3s;
+}
+
+@media (max-width: 480px) {
+  .animation-box {
+    transform: translateX(100%);
+    transition: transform 2s;
+  }
+}
+
+
+.animation-box-1 {
+  transform: translateY(-100px);
+  transition: transform 3s;
+}
+
+@media (max-width: 480px) {
+  .animation-box-1 {
+    transform: translateX(-100%);
+    transition: transform 2s;
+  }
+}
+

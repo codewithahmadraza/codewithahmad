@@ -1,0 +1,160 @@
+*{
+  font-family: 'Roboto', sans-serif;;
+}
+
+
+.about-container {
+  padding: 50px 100px 50px 100px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.695);
+}
+
+@media (max-width: 480px) {
+  .about-container{
+    min-height: 1900px;  
+    padding: 50px 0 0 0;
+  }
+  
+}
+
+
+.about-container h1 {
+  text-align: center;
+  font-size: 60px;
+  margin: 0 0 50px 0;
+  color: rgb(40, 215, 31);
+  font-family: 'Young Serif', serif;
+  background-color: white;
+  border: 2px solid rgb(232, 231, 231);
+  border-radius: 5px 10px 10px 40px;
+}
+
+@media (max-width: 480px) {
+  .about-container h1 {
+    font-size: 40px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+}
+
+.des-1 {
+  margin-bottom: 20px;
+  margin-top: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(100px);
+}
+
+.des-1 h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+.des-1 p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .des-1{
+    margin: 50px auto;
+    width: 90vw;
+  }
+  .des-1 h2 {
+    font-size: 30px;
+  }
+  
+}
+
+.des-2container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .des-2container {
+    display: block;
+  }
+}
+
+.left-des h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+
+.left-des {
+  margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+  .left-des{
+    margin: 50px auto;
+    width: 90vw;
+  }
+  .left-des h3 {
+    font-size: 30px;
+  }
+}
+
+.right-des, .left-des, .des-1  {
+  flex: 1;
+  /* background-color: white; */
+  padding: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.128);
+  border-radius: 10px;
+  border: 2px solid rgba(211, 211, 211, 0.333);
+}
+
+@media (max-width: 480px) {
+  .right-des, .left-des, .des-1{
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.128);
+  }
+  
+}
+
+.left-des p {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.right-des h4 {
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .right-des h4 {
+    font-size: 30px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .right-des{
+    margin: 50px auto;
+    width: 90vw;
+  }
+  .right-des h4 {
+    font-size: 30px;
+  }
+}
+
+
+.right-des p {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.resume-button {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}

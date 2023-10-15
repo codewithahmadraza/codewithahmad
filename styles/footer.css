@@ -1,0 +1,14 @@
+/* Style for the footer */
+footer {
+  background-color: rgb(75, 75, 75); /* Change to your preferred background color */
+  color: #fff; /* Text color */
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style for the footer text */
+footer p {
+  margin: 5px;
+  font-size: 14px;
+}

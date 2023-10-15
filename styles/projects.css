@@ -1,0 +1,131 @@
+*{
+  font-family: 'Roboto', sans-serif;;
+}
+
+.projects-container {
+  height: 100vh;
+  background-color: rgba(238, 225, 254, 0.629);
+  padding: 50px 100px 50px 100px;
+}
+
+@media (max-width: 480px) {
+  .projects-container{
+    height: 3000px;  
+    padding: 50px 0 0 0;
+  }
+  
+}
+
+
+.projects-container h1 {
+  text-align: center;
+  font-size: 60px;
+  margin: 0 0 25px 0;
+  color: rgb(40, 215, 31);
+  font-family: 'Young Serif', serif;
+  background-color: white;
+  border: 2px solid rgb(232, 231, 231);
+  border-radius: 5px 10px 10px 40px;
+}
+
+@media (max-width: 480px) {
+  .projects-container h1 {
+    font-size: 40px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+}
+
+.projects-grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 330px 330px;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .projects-grid-container {
+    grid-template-columns: 300px;
+    grid-template-rows: 330px 330px 330px 330px 330px 330px 330px 330px  ;
+    margin-top: 50px;
+  }
+}
+
+.picture{
+  width: 280px;
+  height: 170px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.picture img {
+  height: 170px;
+}
+
+
+.p-cont{
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.p-des {
+  width: 280px;
+  margin: 20px auto;
+}
+
+.p-des p {
+  margin: 0;
+  padding: 5px;
+}
+
+.glass {
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(100px);
+  border: 2px solid rgb(196, 196, 196);
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.214);
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.glass:hover {
+  transform: scale(1.05);
+}
+
+.button-cont {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.button-cont button{
+  padding: 7px 15px;
+  font-size: 15px;
+  background-color: rgb(215, 31, 101);
+  color: white;
+  border: 5px solid rgb(238, 144, 185);
+  border-radius: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Animation starts here */
+
+/* .anime-1 {
+  animation-name: offset;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes offset {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translatey(20px);
+  }
+} */

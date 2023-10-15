@@ -1,0 +1,115 @@
+*{
+  font-family: 'Roboto', sans-serif;;
+}
+
+.contact-container {
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  padding: 50px 100px 0 100px;
+  background-color: rgba(176, 246, 183, 0.188);
+}
+
+@media (max-width: 480px) {
+  .contact-container{
+    height: 850px;  
+    padding: 50px 0 0 0;
+  }
+  
+}
+
+.contact-container h1 {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(40, 215, 31); 
+  margin: 0 0 25px 0;
+  font-family: 'Young Serif', serif;
+  background-color: white;
+  border: 2px solid rgb(232, 231, 231);
+  border-radius: 5px 10px 10px 40px;
+}
+
+@media (max-width: 480px) {
+  .contact-container h1 {
+    font-size: 40px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+}
+
+
+.form-container {
+  background-color: rgb(255, 255, 255);
+  margin: 50px auto;
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px 50px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.214);
+  border: 2px solid rgb(203, 202, 202);
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    max-height: 100vh;
+    max-width: 90vw;
+    overflow: hidden;
+    padding: 20px 25px;
+  }
+}
+
+form label, input {
+  display: block;
+  font-size: 20px;
+  margin: 10px 0;
+  color: rgb(0, 0, 0);
+  outline: none;
+} 
+
+form input {
+  background-color: rgb(75, 75, 75);
+  color: white;
+}
+
+#name, #email {
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  #name, #email {
+    width: 75vw;
+  }
+}
+
+#message {
+  width: 400px;
+  border-radius: 10px;
+  padding: 5px;
+  border-style: none;
+  font-size: 20px;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  #message {
+    width: 75vw;
+  }
+}
+
+#submit {
+  padding: 7px 40px;
+  border-radius: 50px;
+  background-color: rgb(215, 31, 101);
+  color: white;
+  border: 7px solid rgb(238, 144, 185);
+  margin: 20px auto 0 auto;
+}
